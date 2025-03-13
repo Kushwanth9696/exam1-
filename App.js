@@ -1,13 +1,21 @@
+// src/App.js
 import React from 'react';
-import RefExamples from './components/REfExamples';
+import Register from './components/Register';
+import Login from './components/Login';
+import VerifyBackupCode from './components/VerifyBackupCode';
+import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Welcome to the Ref Examples App</h1>
-      <RefExamples />
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>Multi-Factor Authentication (MFA) System</h1>
+            <Register />
+            <hr />
+            <Login />
+            <hr />
+            <VerifyBackupCode />
+        </div>
+    );
 }
 
 export default App;
